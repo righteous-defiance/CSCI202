@@ -59,11 +59,12 @@ header{
 }
 // navigation
 nav{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;  
     a{
         text-decoration: none;
         color: $text-color;
-        display: inline-block;
         padding: 1em 2em;
     }
 }
@@ -79,14 +80,19 @@ nav{
 
 main{
     background-color: $bg-color;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
 }
 .sideleft{
     width: 30%;
-    float: left;
+    margin-left: 5%;
 }
 .sideright{
     width: 60%;
-    float: right;
+    margin-left: 5%;
 }
 .btn{
     background: $main-color;
@@ -98,8 +104,8 @@ main{
 }
 
 .box{
-    width: 30%;
-    float: left;
+    flex: 30%;
+    flex-direction: row;
     padding: 2em;
     text-align: center;
     color: $text-color;
